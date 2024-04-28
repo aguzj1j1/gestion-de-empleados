@@ -1,0 +1,157 @@
+{
+	"info": {
+		"_postman_id": "f6446b5d-4ae1-45c5-a719-707f455f5ab4",
+		"name": "Test Api empleados programacionweb2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11127524"
+	},
+	"item": [
+		{
+			"name": "Obtener empleados",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Crear empleado",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"employee\": {\r\n        \"name\": \"Jose Jalisco\",\r\n        \"job\": \"electricista\",\r\n        \"years\": 35,\r\n        \"document\" :\"444444\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar empleado",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"employee\": {\r\n        \"name\": \"Jose Jalisco\",\r\n        \"job\": \"electricista\",\r\n        \"years\": 35,\r\n        \"document\" :\"222222\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/employees/222222",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"employees",
+						"222222"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar empleado",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"employee\": {\r\n        \"name\": \"Jose Jalisco\",\r\n        \"job\": \"electricista\",\r\n        \"years\": 35,\r\n        \"document\" :\"222222\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/employees/222222",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"employees",
+						"222222"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener empleado por documento",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"employee\": {\r\n        \"name\": \"Jose Jalisco\",\r\n        \"job\": \"electricista\",\r\n        \"years\": 35,\r\n        \"document\" :\"222222\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/employees/222222",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"employees",
+						"222222"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
